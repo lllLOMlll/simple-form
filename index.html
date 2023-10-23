@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lab 5 Checkout Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="background-image">
+	<form>
+		<!-- TTTLE -->
+		<div>
+			<p>Checkout form</p>
+		</div>
+
+		<!-- Separator -->
+		<div class="separator-title"></div>
+
+		<div class="container">
+			<!-- LINE 1 -->
+			<!-- Firt Name and Last Name -->
+			<div class="row">
+				<div class="half div-icon">
+					<input class="name-mail-phone" type="text" name="first-name" placeholder="First Name" id="first-name" required>
+					<img src="images/user.png" alt="User icon">
+				</div>
+				
+				<div class="half div-icon">
+					<input class="name-mail-phone" type="text" name="last-name" placeholder="Last Name" id="last-name" required>
+					<img src="images/user.png" alt="User icon" >
+				</div>
+			</div>
+
+			<!-- LINE 2 -->
+			<!-- Email and Phone -->
+			<div class="row">
+				<div class="half div-icon">
+					<input class="name-mail-phone" type="email" name="email" placeholder="E-mail" id="email" required>
+					<img src="images/env.png" alt="Envelope">
+				</div>
+				<div class="half div-icon">
+					<input class="name-mail-phone" type="tel" name="phone" placeholder="Phone" id="phone" required>
+					<img src="images/phone.png" alt="Phone">
+				</div>
+			</div>
+
+			<!-- Separator -->
+			<div class="separator"></div>
+
+			<!-- LINE3  -->
+			<!-- Country, City and Postal Code -->
+			<div class="row3">
+				<div class="third country-city-postal-code">
+					<select  class="country-city-postal-code" id="country" name="country" required>
+						<option value="" disabled selected hidden>Country</option>
+						<option value="canada">Canada</option>
+						<option value="chine">China</option>
+						<option value="france">France</option>
+						<option value="germany">Germany</option>
+						<option value="india">India</option>
+						<option value="italy">Italy</option>
+						<option value="quebec">Québec</option>
+						<option value="usa">USA</option>
+					</select>
+				</div>
+				<div class="third">
+					<input class="country-city-postal-code" type="text" name="city" placeholder="City" id="city" required>
+				</div>
+				<div class="third">
+					<input class="country-city-postal-code" type="text" name="postal-code" placeholder="Postal Code" id="postal-code" required>
+				</div>
+			</div>
+
+			<!-- LINE4  -->
+			<!-- Address -->
+			<div class="row4">
+				<div class="full">
+					<input class="address fourth" type="text" name="address" placeholder="Address" id="address" required>
+				</div>
+			</div>
+
+			<!-- LINE 5 -->
+			<!-- Additional Info -->
+			<div class="row5">
+				<div class="full">
+					<textarea id="additional-info" name="additional-info" placeholder="Additional info"></textarea>
+				</div>
+			</div>
+
+			<!-- Separator -->
+			<div class="separator"></div>
+
+			<!-- LINE 6 -->
+			<!-- Visa, Mastercard, PayPal -->
+			<div class="row6">
+				<label><input type="radio" name="payment" value="visa" required>Visa</label>
+				<label><input type="radio" name="payment" value="mastercard">MasterCard</label>
+				<label><input type="radio" name="payment" value="paypal">PayPal</label>
+			</div>
+
+			<!-- LINE 7 -->
+			<!-- Name on card -->
+			<div class="row7">
+				<div class="full">
+					<input class="name-on-card" type="text" name="name-on-card" placeholder="Name on card" id="name-on-card" required>
+				</div>
+			</div>
+
+			<!-- LINE 8 -->
+			<!-- Card Number, CVV -->
+			<div class="row8">
+				<div class="half card-number-cvv">
+					<input class="card-number" type="number" name="card-number" placeholder="Card Number" id="card-number" required>
+				</div>
+
+				<div class=" half card-number-cvv">
+					<input class="cvv" type="number" name="last-name" placeholder="CVV" id="CVV" min="0" max="999" required>
+				</div>
+			</div>
+			<!-- LINE 9 -->
+			<!-- Expiration date, Month, Year -->
+			<div class="row3">
+				<div class="third country-city-postal-code">
+					<label for="expiration-month">Expiration date</label>
+				</div>
+				<div class="third">
+					<select class="country-city-postal-code" id="expiration-month" name="expiration-month" required>
+						<option value="" disabled selected hidden>Month</option>
+						<option value="january">January</option>
+						<option value="february">February</option>
+						<option value="march">March</option>
+						<option value="april">April</option>
+						<option value="may">May</option>
+						<option value="june">June</option>
+						<option value="july">July</option>
+						<option value="august">August</option>
+						<option value="september">September</option>
+						<option value="october">October</option>
+						<option value="november">November</option>
+						<option value="december">December</option>
+					</select>
+				</div>
+				<div class="third">
+					<input class="country-city-postal-code" type="number" name="expiration-year" placeholder="Year" id="expiration-year" min="2023" max="2030" required>
+				</div>
+			</div>
+
+
+			
+			<!-- Separator -->
+			<div class="separator"></div>
+
+			<!-- LINE 10 -->
+			<!-- Continue - Submit button-->
+			<div class="row10">
+				<input class="submit-button" type="submit" value="Continue" id="sendBtn">
+			</div>
+
+			<!-- End of the form -->
+		</div>
+	</form>
+
+	<!-- VALIDATION -->
+	<div class="row-validation">
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss"
+				alt="CSS Valide !">
+			</a>
+		</p>
+
+		<p>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img style="border:0;width:88px;height:31px"
+				src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				alt="CSS Valide !">
+			</a>
+		</p>
+	</div>
+</body>
+</html>
